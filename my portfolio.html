@@ -8,14 +8,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink: #dedfe6;
-  --ink-2: #1A1D29;
-  --ink-3: #222733;
-  --line: #2C3140;
+  --ink: #323233;
+  --ink-2: #4a4c53;
+  --ink-3: #2c2f36;
+  --line: #313338;
   --text: #E7E5DD;
   --text-muted: #9096A6;
   --text-faint: #5B6274;
-  --signal: #E8A33D;
+  --signal: #2ad38c;
   --teal: #4FBFAE;
   --teal-soft: rgba(79, 191, 174, 0.14);
   --font-display: 'Space Grotesk', sans-serif;
@@ -100,7 +100,7 @@ ul, dl { margin: 0; padding: 0; list-style: none; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: var(--radius); font-size: 14.5px; font-weight: 600; font-family: var(--font-mono); transition: 0.15s; }
 .btn:hover { transform: translateY(-1px); }
 .btn--primary { background: var(--signal); color: var(--ink); }
-.btn--primary:hover { background: #f0af4e; }
+.btn--primary:hover { background: #94713d; }
 .btn--primary:disabled { opacity: 0.6; transform: none; cursor: not-allowed; }
 .btn--ghost { border: 1px solid var(--line); color: var(--text); }
 .btn--ghost:hover { border-color: var(--teal); color: var(--teal); }
@@ -225,7 +225,7 @@ ul, dl { margin: 0; padding: 0; list-style: none; }
       <div class="about__text">
         <p>I'm a software development student working across a range of web technologies — HTML, CSS, JavaScript, Python and Django.</p>
         <p>I don't like jumping straight into code. Before any project, I like to analyze it properly (Systems Analysis &amp; Design): understand the problem, map the data flow (DFD), and plan the database structure (ERD) before building anything.</p>
-        <p>Right now I'm building <strong>Afya Clinic</strong> — a clinic management system built with Django, along with a few smaller projects blending frontend and backend technologies.</p>
+        <p>Right now I'm building <strong>Clinic system</strong> — a clinic management system built with Django, along with a few smaller projects blending frontend and backend technologies.</p>
       </div>
       <dl class="about__facts">
         <div><dt>Focus</dt><dd>Software Development</dd></div>
@@ -324,17 +324,12 @@ ul, dl { margin: 0; padding: 0; list-style: none; }
 
   const projectsData = [
     {
-      title: 'Afya Clinic Management System',
+      title: ''   Clinic Management System',
       description: 'A system for managing patients, appointments, and clinic records for small health facilities.',
       techStack: 'Django, PostgreSQL, HTML/CSS, JavaScript',
       repoUrl: '', liveUrl: ''
     },
-    {
-      title: 'Ifnaydaty Hair Care Store',
-      description: 'A website for natural hair oil products, featuring a product catalog and complete branding.',
-      techStack: 'HTML, CSS, JavaScript',
-      repoUrl: '', liveUrl: ''
-    },
+    
     {
       title: 'SafariLink Booking System',
       description: 'An electronic ticket booking and bus terminal operations system, designed from systems analysis work.',

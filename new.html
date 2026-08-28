@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYMUN JUMA | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* MAIN CONTAINER */
+        main {
+            max-width: 900px;
+            margin: -40px auto 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1e3c72;
+            border-bottom: 3px solid #2a5298;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* PERSONAL INFO */
+        .info-item {
+            margin-bottom: 8px;
+        }
+
+        .info-item strong {
+            color: #1e3c72;
+        }
+
+        /* SKILLS */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background: #eaf0fb;
+            color: #1e3c72;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* PROJECTS */
+        .project-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            color: #2a5298;
+            margin-bottom: 8px;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #444;
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-top: 8px;
+            margin-right: 5px;
+        }
+
+        /* CONTACT */
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            background: #1e3c72;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background 0.2s ease;
+        }
+
+        .contact-links a:hover {
+            background: #2a5298;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MYMUN JUMA</h1>
+        <p>Software Development Student | Full-Stack Developer</p>
+    </header>
+
+    <main>
+
+        <!-- PERSONAL INFO -->
+        <section>
+            <h2>Personal Information</h2>
+            <p class="info-item"><strong>Phone:</strong> +255 710 551 725</p>
+            <p class="info-item"><strong>Location:</strong> Zanzibar, Tanzania</p>
+        </section>
+
+        <!-- ABOUT -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is MYMUN JUMA, a Software Development student
+                with hands-on experience in web development and systems analysis.
+                I enjoy building full-stack applications and I am passionate about
+                learning new technologies to solve real-world problems.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>React</li>
+                <li>Spring Boot</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <h2>My Projects</h2>
+
+            <div class="project-card">
+                <h3> Clinic Management System</h3>
+                <p>A system designed to manage patient records, appointments, and clinic operations efficiently.</p>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">React</span>
+                <span class="tag">MySQL</span>
+            </div>
+
+            <div class="project-card">
+                <h3Hair Care Store</h3>
+                <p>An e-commerce platform for a hair care products brand, showcasing products and enabling online orders.</p>
+                <span class="tag">React</span>
+                <span class="tag">Django</span>
+                <span class="tag">E-commerce</span>
+            </div>
+
+            <div class="project-card">
+                <h3>SafariLink Booking System</h3>
+                <p>A computerized booking and terminal management system designed for coach services, developed from a Systems Analysis and Design case study.</p>
+                <span class="tag">Systems Analysis</span>
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section>
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="tel:+255710551725">📞 Call</a>
+                <a href="mailto:youremail@example.com">✉️ Email</a>
+                <a href="https://github.com/yourusername" target="_blank">💻 GitHub</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2026 MYMUN JUMA. All rights reserved.
+    </footer>
+
+</body>
+</html>
